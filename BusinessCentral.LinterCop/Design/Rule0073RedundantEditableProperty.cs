@@ -23,13 +23,13 @@ namespace BusinessCentral.LinterCop.Design
                 return;
 
             IObjectTypeSymbol objectTypeSymbol = context.Symbol.GetContainingObjectTypeSymbol();
-            IPageTypeSymbol? pageTypeSymbol = null;
             IPageExtensionTypeSymbol? pageExtensionTypeSymbol = objectTypeSymbol as IPageExtensionTypeSymbol;
 
-            if(pageExtensionTypeSymbol != null)
+            IPageTypeSymbol? pageTypeSymbol;
+            if (pageExtensionTypeSymbol != null)
             {
                 PageExtensionSyntax? pageExtensionSyntax = pageExtensionTypeSymbol.DeclaringSyntaxReference?.GetSyntax() as PageExtensionSyntax;
-                if(pageExtensionSyntax == null)
+                if (pageExtensionSyntax == null)
                     return;
 
                 pageTypeSymbol = GetObjectTypeSymbol(pageExtensionSyntax.BaseObject.Identifier as IdentifierNameSyntax, SymbolKind.Page, context.Compilation) as IPageTypeSymbol;
@@ -39,10 +39,10 @@ namespace BusinessCentral.LinterCop.Design
                 pageTypeSymbol = objectTypeSymbol as IPageTypeSymbol;
             }
 
-            if(pageTypeSymbol == null)
+            if (pageTypeSymbol == null)
                 return;
 
-            bool? pageExtensionValue = pageExtensionValue = pageExtensionTypeSymbol?.GetSimplePropertyValue<bool>(PropertyKind.Editable);
+            bool? pageExtensionValue = pageExtensionTypeSymbol?.GetSimplePropertyValue<bool>(PropertyKind.Editable);
             bool? pageValue = pageTypeSymbol.GetSimplePropertyValue<bool>(PropertyKind.Editable);
 
             if ((pageValue.HasValue && !pageValue.Value) || (pageExtensionValue != null && pageExtensionValue.HasValue && !pageExtensionValue.Value))
