@@ -8,7 +8,7 @@ public class Rule0073
     public void Setup()
     {
         _testCaseDir = Path.Combine(Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.FullName,
-            "TestCases", "Rule0072");
+            "TestCases", "Rule0073");
     }
 
     [Test]
