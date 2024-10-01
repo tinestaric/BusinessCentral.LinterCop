@@ -750,4 +750,31 @@
   <data name="Rule0070ListObjectsAreOneBasedDescription" xml:space="preserve">
     <value>List objects are 1-based, meaning indexing starts from 1 instead of the conventional 0.</value>
   </data>
+  <data name="Rule0071_1IncorrectArgumentCountDescription" xml:space="preserve">
+    <value>Analyze 'Get' function call arguments.</value>
+  </data>
+  <data name="Rule0071_1IncorrectArgumentCountFormat" xml:space="preserve">
+    <value>The 'Get' function call on table '{0}' should have {1} argument(s).</value>
+  </data>
+  <data name="Rule0071_1IncorrectArgumentCountTitle" xml:space="preserve">
+    <value>Incorrect number of arguments in 'Get' function call</value>
+  </data>
+  <data name="Rule0071_2InvalidArgumentTypeInGetCallDescription" xml:space="preserve">
+    <value>Analyze 'Get' function call argument types.</value>
+  </data>
+  <data name="Rule0071_2InvalidArgumentTypeInGetCallFormat" xml:space="preserve">
+    <value>The argument in 'Get' function call on table '{0}' has incorrect type.</value>
+  </data>
+  <data name="Rule0071_2InvalidArgumentTypeInGetCallTitle" xml:space="preserve">
+    <value>Invalid argument type in 'Get' function call</value>
+  </data>
+  <data name="Rule0071_3ArgumentLengthExceedsMaxLengthDescription" xml:space="preserve">
+    <value>Analyze 'Get' function call argument lengths.</value>
+  </data>
+  <data name="Rule0071_3ArgumentLengthExceedsMaxLengthFormat" xml:space="preserve">
+    <value>The argument length in 'Get' function call on table '{0}' should not exceed the maximum length of '{1}'.</value>
+  </data>
+  <data name="Rule0071_3ArgumentLengthExceedsMaxLengthTitle" xml:space="preserve">
+    <value>Argument length exceeds field maximum length in 'Get' function call</value>
+  </data>  
 </root>
