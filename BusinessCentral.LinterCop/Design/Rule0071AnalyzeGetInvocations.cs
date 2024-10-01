@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 namespace BusinessCentral.LinterCop.Design
 {
     [DiagnosticAnalyzer]
-    public class Rule28AnalyzeGetInvocations : DiagnosticAnalyzer
+    public class Rule71AnalyzeGetInvocations : DiagnosticAnalyzer
     {
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } = ImmutableArray.Create(DiagnosticDescriptors.Rule0071_1IncorrectArgumentCount, DiagnosticDescriptors.Rule0071_2InvalidArgumentTypeInGetCall,DiagnosticDescriptors.Rule0071_3ArgumentLengthExceedsMaxLength);
 
