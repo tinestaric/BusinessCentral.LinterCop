@@ -777,4 +777,13 @@
   <data name="Rule0071_3ArgumentLengthExceedsMaxLengthTitle" xml:space="preserve">
     <value>Argument length exceeds field maximum length in 'Get' function call</value>
   </data>  
+  <data name="Rule0072DuplicatePropertyDescription" xml:space="preserve">
+    <value>Duplicate properties with the same value can lead to redundancy and confusion.</value>
+  </data>
+  <data name="Rule0072DuplicatePropertyFormat" xml:space="preserve">
+    <value>The property '{0}' has a duplicate with the same value.</value>
+  </data>
+  <data name="Rule0072DuplicatePropertyTitle" xml:space="preserve">
+    <value>Duplicate Property</value>
+  </data>  
 </root>
