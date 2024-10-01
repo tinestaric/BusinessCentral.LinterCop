@@ -786,4 +786,13 @@
   <data name="Rule0072DuplicatePropertyTitle" xml:space="preserve">
     <value>Duplicate Property</value>
   </data>  
+  <data name="Rule0073RedundantEditablePropertyDescription" xml:space="preserve">
+    <value>Redundant editable properties can clutter code and lead to confusion.</value>
+  </data>
+  <data name="Rule0073RedundantEditablePropertyFormat" xml:space="preserve">
+    <value>The 'Editable' Property is Redundant Due to the Presence of Object-Level Editable Property Being Defined as False.</value>
+  </data>
+  <data name="Rule0073RedundantEditablePropertyTitle" xml:space="preserve">
+    <value>Redundant Editable Property</value>
+  </data>  
 </root>
